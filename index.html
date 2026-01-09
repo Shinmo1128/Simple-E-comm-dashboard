@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mini E-Comm Store</h1>
+</header>
+
+<!-- Products -->
+<section class="products">
+  <div class="product">
+    <h3>T-Shirt</h3>
+    <p>₹500</p>
+    <button onclick="addToCart('T-Shirt', 500)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Pant</h3>
+    <p>₹900</p>
+    <button onclick="addToCart('Pant', 900)">Add to Cart</button>
+  </div>
+   <div class="product">
+    <h3>Shoes</h3>
+    <p>₹1200</p>
+    <button onclick="addToCart('Shoes', 1200)">Add to Cart</button>
+  </div>
+   <div class="product">
+    <h3>Dress</h3>
+    <p>₹1500</p>
+    <button onclick="addToCart('Dress', 1500)">Add to Cart</button>
+  </div>
+</section>
+
+<!-- Cart -->
+<section class="cart">
+  <h2>Shopping Cart</h2>
+  <ol id="cartItems"></ol>
+  <h3>Total: ₹<span id="total">0</span></h3>
+  <button onclick="payNow()">Pay Now</button>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
